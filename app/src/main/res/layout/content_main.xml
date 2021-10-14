@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!--Banner-->
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:text="@string/banner_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <!--Height-->
+    <TextView
+        android:id="@+id/tv_height"
+        style="@style/multi_text_view_style"
+        android:text="@string/height_inches" />
+
+    <EditText
+        android:id="@+id/et_height"
+        style="@style/main_edit_text_style"
+        android:hint="@string/hint_height" />
+    <!--Weight-->
+    <TextView
+        android:id="@+id/tv_weight"
+        style="@style/multi_text_view_style"
+        android:text="@string/weight_pounds" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        style="@style/main_edit_text_style"
+        android:hint="@string/hint_weight" />
+
+</LinearLayout>
